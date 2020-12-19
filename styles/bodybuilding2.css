@@ -162,9 +162,11 @@ body {
 
     .buttons button:hover {
         animation-name: tap;    
-        animation-duration: 0.2s;
+        animation-duration: 0.3s;
+        animation-timing-function: linear;
         background-color: var(--lighter-font-color);
-        color: black;
+        background-color: transparent;
+        color: wheat ; 
     }
 
     @keyframes tap {
