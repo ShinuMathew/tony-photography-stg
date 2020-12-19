@@ -160,11 +160,22 @@ body {
         outline: none;
     }
 
-    .buttons button:link,
-    .buttons button:visited,
-    .buttons button:hover,
-    .buttons button:active {
-        background-color: var(--lighter-font-color);
-        color: black;       
+    .buttons button:hover {
+        animation-name: tap;    
+        animation-duration: 0.2s;
+        background-color: transparent;
+        color: wheat ; 
+    }
+
+    @keyframes tap {
+        0% {
+            background-color: transparent;
+            color: wheat ;            
+        } 
+        100% {
+            background-color: var(--lighter-font-color);
+            color: black;
+        }
+        
     }
 }
