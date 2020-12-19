@@ -5,7 +5,7 @@
 }
 
 body {    
-    background-image: url(./../sliders/contact-bg1.jpg);
+    background-image: url(./../sliders/contact-bg1-min.jpg);
 }
 
 .body-space {
@@ -131,6 +131,10 @@ body {
     animation-name: sm-fade;
     animation-duration: 3s;
     animation-fill-mode: forwards;
+}
+
+.fa {
+    padding: 6px !important;
 }
 
 @keyframes sm-fade {
@@ -447,12 +451,10 @@ body {
 }
 
 @media (max-width : 600px) {
+
     .about-section .about-info {
         top: 40%;
     }
-}
-
-@media (max-width : 600px) {
 
     .about-section {
         height: 70%;
@@ -471,10 +473,16 @@ body {
     }
     
     .about-text h3 {
-        margin: 1rem;
-        font-size: 1.1rem;
+        margin: 1rem;        
         color: var(--dark-font-color);
         font-style: italic;
+        font-size: 0.9rem;
+    }
+
+    #contact-info {
+        text-align: center;
+        font-size: 0.8rem;
+        margin: 5px
     }
     
     .about-text h3 span{
@@ -495,12 +503,18 @@ body {
     }
 
     .footer-social-icons {
+        margin: 10px;
+        margin-bottom: 0px;
         flex-direction: column;
+        font-size: 0.8rem;
     }
 
     ._14 {    
         font-size: 1.1rem;
-        margin-right: 8px ;
+    }
+
+    .fa {
+        padding: 3px !important;
     }
 }
 
@@ -527,15 +541,20 @@ body {
     }
     
     .about-text h3 {
-        margin: 1rem;
-        font-size: 1rem;
+        margin: 1rem;        
         color: var(--dark-font-color);
         font-style: italic;
+    }
+
+    #contact-info {
+        text-align: center;
+        font-size: 0.7rem;
+        margin: 4px
     }
     
     .about-text h3 span{
         color: var(--darker-font-color);
-        font-size: 1rem;
+        font-size: 0.7rem;
         font-weight: 1rem;
     }
     
@@ -566,10 +585,15 @@ body {
 
 @media (max-width : 400px) {
 
+    .about-text #contact-info {
+        text-align: center;
+        font-size: 0.6rem;
+        margin: 3px
+    }
     
     .about-text h3 {
         margin: 0.5rem;
-        font-size: 0.7rem;
+        font-size: 0.5rem;
         color: var(--dark-font-color);
         font-style: italic;
     }
@@ -583,6 +607,7 @@ body {
     .about-text h3 br { 
         display: block;
     }
+
     
     .about-text p {
         font-size: 0.6rem;

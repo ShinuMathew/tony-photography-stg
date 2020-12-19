@@ -1,25 +1,25 @@
 body {
-    background-image: url(sliders/slider01.jpg);
+    background-image: url(sliders/slider01-min.jpg);
 }
 
 @keyframes slider {
     0% {
-        background-image: url(sliders/slider01.jpg)
+        background-image: url(sliders/slider01-min.jpg)
     }
 
     25% {
-        background-image: url(sliders/slider02.jpg);
+        background-image: url(sliders/slider02-min.jpg);
     }
 
     50% {
-        background-image: url(sliders/slider03.jpg);
+        background-image: url(sliders/slider03-min.jpg);
     }
 
     75% {
-        background-image: url(sliders/slider04.jpg);
+        background-image: url(sliders/slider04-min.jpg);
     }
 
     100% {
-        background-image: url(sliders/slider01.jpg)
+        background-image: url(sliders/slider01-min.jpg)
     }
 }

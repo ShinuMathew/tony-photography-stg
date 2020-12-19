@@ -7,6 +7,7 @@
 body,
 html {
     min-height: 100%;
+    overflow: hidden;
 }
 
 /* Backround image slide show */
@@ -605,6 +606,8 @@ section {
 
     #check {
         display: block;
+        right: 0.1rem;
+        width: 5rem;
     }
 
     .nav-btn {
@@ -621,10 +624,12 @@ section {
         overflow-y: auto;
         transform: translateX(100%);
         transition: .65s;
+        display: none;
     }
 
     #check:checked~.nav-btn {
         transform: translateX(0);
+        display: block;
     }
 
     #check:checked~.nav-btn .nav-link,
