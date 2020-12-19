@@ -193,7 +193,7 @@ header {
 
 section {
     position: relative;
-    height: calc(85vh);
+    height: calc(82vh);
     width: 100%;
     overflow: hidden;
 }
@@ -435,6 +435,18 @@ section {
     100% {
         opacity: 1;
     }
+}
+
+.footer-social-icons h3 {
+    color: var(--light-font-color);
+    font-weight: 100;
+    font-size: 1.5rem;
+}
+
+.footer-social-icons h6 {
+    color: var(--light-font-color);
+    font-weight: 100;
+    letter-spacing: 0.4rem;
 }
 
 ._14 {
@@ -711,12 +723,12 @@ section {
     /* Main section and text content */
 
     .overlay {
-        top: 45vh;
+        top: 25vh;
         left: 0;
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: flex-start;
+        justify-content: space-around;
     }
 
     .overlay .text-content1 {
@@ -758,10 +770,10 @@ section {
         color: chocolate;
     }
 
-    .btn {
+    /* .btn {
         background-color: var(--default-btn-select);
         color: rgb(212, 160, 122);
-    }
+    } */
 
 
     .footer-social-icons h3 {
@@ -870,7 +882,7 @@ section {
     .btn {
         font-size: 0.8rem;
         text-align: center;
-        margin: 2px;
+        margin: 4px;
         padding: 0.5rem;
         width: 6rem;
     }
