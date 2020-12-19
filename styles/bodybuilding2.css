@@ -159,4 +159,12 @@ body {
         border-radius: 20%;
         outline: none;
     }
+
+    .buttons button:link,
+    .buttons button:visited,
+    .buttons button:hover,
+    .buttons button:active {
+        background-color: var(--lighter-font-color);
+        color: black;       
+    }
 }

@@ -5,7 +5,7 @@
 }
 
 body {
-    background-image: url(./../sliders/slider07.jpg);
+    background-image: url(./../sliders/slider07-min.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -145,7 +145,12 @@ body {
     background-color: var(--white-bg-color);
     border: none;
     border-radius: 10px;
-    color: rgb(0, 0, 0);
+    color: rgb(0, 0, 0);    
+}
+
+#form input:focus, #description:focus {
+    outline: none;   
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.486), 0 2px 10px 0 rgba(255, 255, 255, 0.342);
 }
 
 #form button {
@@ -158,6 +163,11 @@ body {
     color: rgb(109, 103, 103);
     cursor: pointer;
     font-size: 18px;
+    outline: none;   
+}
+
+#form button:active {
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.486), 0 2px 10px 0 rgba(255, 255, 255, 0.342);
 }
 
 /* #form input:nth-child(4) {

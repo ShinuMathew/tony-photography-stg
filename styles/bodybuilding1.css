@@ -44,10 +44,10 @@ body {
 
 #scrollToTopBtn {
     position: fixed;
-    right: 15px;
-    bottom: 50px;
-    width: 50px;
-    height: 50px;
+    right: 2%;
+    bottom: 2%;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
     background: var(--darker-bg-color);
     box-shadow: 0 0 10px rgba(245, 222, 179, 0.356);
@@ -84,4 +84,22 @@ body {
 
 .my-footer .container h3 span {
     margin: 2px;
+}
+
+@media (max-width : 700px) {
+    #scrollToTopBtn {
+        position: fixed;
+        right: 2px;
+        bottom: 10%;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background: var(--darker-bg-color);
+        box-shadow: 0 0 10px rgba(245, 222, 179, 0.356);
+        color: aliceblue;
+        outline: none;
+        cursor: pointer;
+        border: none;
+        z-index: 20;
+    }
 }
