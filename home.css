@@ -45,6 +45,7 @@ body {
 .body-space {
     background-color: var(--default-bg-color);
     height: 100vh;
+    overflow: auto;
 }
 
 /* Header and nav menu */
@@ -445,7 +446,8 @@ section {
 
 .footer-social-icons h6 {
     color: var(--light-font-color);
-    font-weight: 100;
+    font-weight: 10 !important;
+    margin: 5px;
     letter-spacing: 0.3rem;
 }
 

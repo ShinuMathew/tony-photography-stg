@@ -296,23 +296,21 @@ select {
 @media (max-width : 500px) {
 
     .content {
-        height: 120vh;
+        height: 100vh;
     }
 
     #form input {
         width: 250px;
         height: 40px;
-        background-color: var(--default-bg-color);
         border: none;
         border-radius: 10px;
-        color: white;
+        /* color: white; */
     }
 
-    #form input:last-child {
+    #description  {
         margin: 10px;
         width: 250px;
-        height: 60px;
-        background-color: var(--default-bg-color);
+        height: 100px;
         border: none;
         border-radius: 10px;
     }
@@ -329,5 +327,57 @@ select {
         margin: 8px 0;
         display: inline-block;
         box-sizing: border-box;
+    }
+
+    ._14 {
+        letter-spacing: 0rem;
+        font-size: 1.3rem;
+        color: var(--light-font-color);
+    }
+
+    .my-footer .container h3 {
+        font-weight: 10;
+        margin: 5px;
+        font-style: italic;
+        font-size: 0.6rem;
+        letter-spacing: 0px;
+    }
+    
+    .my-footer .container h6 {
+        font-weight: 10 !important;
+        margin: 5px;
+        letter-spacing: .3rem;
+        font-size: 0.5rem;
+    }
+    
+    .my-footer .container h3 span {
+        margin: 2px;
+    }
+
+    .my-footer .container {
+        height: 30vh;
+    }
+}
+
+@media (max-width : 300px) {
+    .my-footer .container h3 {
+        font-weight: 10;
+        margin: 2px;
+        font-style: italic;
+        font-size: 0.5rem;
+        letter-spacing: 0px;
+    }
+    
+    .my-footer .container h6 {
+        font-weight: 10 !important;
+        margin: 3px;
+        letter-spacing: .2rem;
+        font-size: 0.4rem;
+    }
+    
+    ._14 {
+        letter-spacing: 0rem;
+        font-size: 1.2rem;
+        color: var(--light-font-color);
     }
 }

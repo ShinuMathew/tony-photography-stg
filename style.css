@@ -23,3 +23,7 @@ body {
         background-image: url(sliders/slider01-min.jpg)
     }
 }
+
+.logo {
+    cursor: pointer;
+}
