@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {    
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.body-space {
+    --light-font-color: rgba(255, 244, 230, 0.911);
+    --lighter-font-color: rgba(250, 247, 243, 0.63);
+    --dark-font-color: rgba(255, 223, 182, 0.911);
+    --darker-font-color: rgba(246, 193, 124, 0.911);
+    --default-bg-color: rgba(7, 10, 10, 0.575);
+    --dark-bg-color: rgb(7, 10, 10);
+    --darker-bg-color: rgb(7, 10, 10);
+    --light-bg-color: rgba(7, 10, 10, 0.322);
+    --default-font: font-family: 'IM Fell French Canon SC', serif;
+    background-color: var(--dark-bg-color);
+    position: relative;
+    overflow: hidden;
+}
+
+.my-header {
+    background-color: var(--light-bg-color);
+    position: absolute;
+    overflow :hidden;
+}
+
+.images {
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+}
+
+.slider {
+    height: 100%;
+    width: 100%;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity .5s ease-in-out;
+}
+
+.slide.current {
+    transition: opacity 1s ease-in-out;
+    opacity: 1;
+}
+
+/* .slide .content {
+    position: absolute;
+    bottom: 70px;
+    left: -600px
+} */
+
+.buttons button#next {
+    position: absolute;
+    top: 45%;
+    right: 15px;
+}
+
+.buttons button#prev {
+    position: absolute;
+    top: 45%;
+    left: 15px;
+}
+
+.buttons button {
+    width: 5rem;
+    height: 6rem;
+    border: 1px solid white;
+    background-color: transparent;
+    color: wheat ;
+    cursor: pointer;
+    padding: 25px 25px;
+    font-size: 2rem;
+    border-radius: 20%;
+    outline: none;
+}
+
+.buttons button:hover {
+    background-color: var(--lighter-font-color);
+    color: black;
+}
+
+.slide:first-child {
+    background : url(./../img/light-img1.jpg) no-repeat center center/cover;
+}
+
+.slide:nth-child(2) {
+    background : url(./../img/light-img2.jpg) no-repeat center center/cover;
+}
+
+.slide:nth-child(3) {
+    background : url(./../img/light-img3.jpg) no-repeat center center/cover;
+}
+
+.slide:nth-child(4) {
+    background : url(./../img/light-img4.jpg) no-repeat center center/cover;
+}
+
+.slide:nth-child(5) {
+    background : url(./../img/light-img5.jpg) no-repeat center center/cover;
+}
+
+.slide:nth-child(6) {
+    background : url(./../img/light-img6.jpg) no-repeat center center/cover;
+}
+
+@media (max-width : 1000px) {
+    .my-header {
+        background-color: var(--light-bg-color);
+        position: relative;
+    }
+
+    .slider {
+        position: relative;
+        top: 20%;
+        height: 40%;
+        width: 100%;
+    }
+
+}
+
+@media (max-width : 600px) {
+
+    .buttons button#next {
+        position: absolute;
+        top: 75%;
+        right: 15px;
+    }    
+
+    .buttons button#prev {
+        position: absolute;
+        top: 75%;
+        left: 15px;
+    }
+    
+    .buttons button {
+        width: 3rem;
+        height: 4rem;
+        border: 1px solid white;
+        background-color: transparent;
+        color: wheat ;
+        cursor: pointer;
+        padding: 15px 15px;
+        font-size: 2rem;
+        border-radius: 20%;
+        outline: none;
+    }
+}

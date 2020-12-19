@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./../home.css" />
+    <link rel="stylesheet" href="./../styles/bodybuilding2.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon+SC&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet"  href="./../fontawesome-free-5.15.1-web/css/solid.css" />
+    <link rel="stylesheet" href="./../fontawesome-free-5.15.1-web/css/brands.css" />
+    <link rel="stylesheet" href="./../fontawesome-free-5.15.1-web/css/fontawesome.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Bodybuilding2</title>
+</head>
+<body>
+    <div class="body-space">
+        <header class="my-header">
+            <div class="container">
+                  <input type="checkbox" id="check" />
+                  <div class="logo-container">
+                    <h1 class="logo">Tony & Allen <br /><span>Photography</span></h1>
+                  </div>
+                  <div class="nav-btn">
+                    <div class="nav-links">
+                      <ul>
+                        <li class="nav-link current-page" style="--i: 0.6s">
+                          <a href="./../index.html">Home</a>
+                        </li>
+                        <li class="nav-link" style="--i: 0.85s">
+                          <a href="about.html">About</a>
+                        </li>
+                        <li class="nav-link" style="--i: 1.1s">
+                          <a href="portfolio.html">Portfolio <i class="fas fa-caret-down"></i></a>
+                          <div class="dropdown second">
+                            <ul>
+                            <li class="dropdown-link">
+                                <a href="bodybuilding1.html">Bodybuilding1</a>
+                            </li>
+                            <li class="dropdown-link">
+                                <a href="#">Bodybuilding2</a>
+                            </li>
+                            </ul>
+                          </div>
+                        </li>
+                        <li class="nav-link" style="--i: 1.3s">
+                          <a href="contact.html">Contact</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="hamburger-menu-container">
+                    <div class="hamburger-menu">
+                      <div></div>
+                    </div>
+                  </div>
+            </div>
+        </header>
+        <main>
+            <div class="images">
+                <div class="slider">
+                    <div class="slide current"></div>
+                    <div class="slide"></div>
+                    <div class="slide"></div>
+                    <div class="slide"></div>
+                    <div class="slide"></div>
+                    <div class="slide"></div>
+                </div>
+            </div>
+            <div class="buttons">
+                <button id="prev"><i class="fas fa-chevron-left"></i></button>
+                <button id="next"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </main>
+    </div>
+    <script src="./../scripts/portfolio.js"></script>
+</body>
+</html>

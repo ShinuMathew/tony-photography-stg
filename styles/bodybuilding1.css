@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {    
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.body-space {
+    --light-font-color: rgba(255, 244, 230, 0.911);
+    --lighter-font-color: rgba(250, 247, 243, 0.911);
+    --dark-font-color: rgba(255, 223, 182, 0.911);
+    --darker-font-color: rgba(246, 193, 124, 0.911);
+    --default-bg-color: rgba(7, 10, 10, 0.575);
+    --dark-bg-color: rgb(7, 10, 10);
+    --darker-bg-color: rgb(7, 10, 10);
+    --light-bg-color: rgba(7, 10, 10, 0.322);
+    --default-font: font-family: 'IM Fell French Canon SC', serif;
+    background-color: var(--dark-bg-color);
+    position: relative;
+    overflow: scroll;
+}
+
+.body-space .images {
+    text-align: center;
+}
+
+.my-header {
+    background-color: var(--dark-bg-color);
+}
+
+.body-space .images img {
+    width: 90%;
+    height: auto;
+    margin: 10px;
+    /* filter: grayscale(100%); */
+}
+
+
+#scrollToTopBtn {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: var(--darker-bg-color);
+    box-shadow: 0 0 10px rgba(245, 222, 179, 0.356);
+    color: aliceblue;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    z-index: 20;
+}
+
+#scrollToTopBtn:active {
+    background: rgba(255, 255, 255, 0.698);
+    color: black;
+}
+
+.my-footer .container {
+    width: 100%;
+    height: 15vh;
+    /* background-color: rgb(20, 20, 20); */
+    color: var(--lighter-font-color);
+}
+
+.my-footer .container h3 {
+    font-weight: 100;
+    margin: 5px;
+    font-style: italic;
+}
+
+.my-footer .container h6 {
+    font-weight: 10 !important;
+    margin: 5px;
+    letter-spacing: .3rem;
+}
+
+.my-footer .container h3 span {
+    margin: 2px;
+}
