@@ -12,6 +12,14 @@
     <link rel="stylesheet" href="./../fontawesome-free-5.15.1-web/css/fontawesome.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script type="text/javascript"src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+          emailjs.init("user_LJedv8oxmwZWpiSsojweB");
+        })();
+    </script>
+    <script type="text/javascript" src="./../scripts/contact.js">      
+    </script>
     <title>Contact Us</title>
 </head>
 <body>
@@ -60,16 +68,21 @@
         <div class="content">
           <div id="write-to-us">
             <h1>Write to us</h1>
-            <div id="contact-form">
-              <form id="form">
-                <input type="text" placeholder="FullName">
-                <input type="text" placeholder="EmailId">
-                <input type="text" placeholder="PhoneNo">
-                <textarea id = "description" placeholder="Description"
+            <div id="contact-us">
+              <form method="POST" id="contact-form" class="form">
+                <input type="hidden" id="phone" placeholder="PhoneNo"name="contact_number">                
+                <input type="text" id="name" name="user_name" placeholder="FullName">                
+                <input type="email" name="user_email" id="email" placeholder="EmailId">                              
+                <textarea name="message" id="description" placeholder="Description"
                 rows = "3"
                 cols = "80"></textarea>
                 <button>Submit</button>
               </form>
+
+              <div class="response-container" id="response">
+                <h1>Thanks You!<br>Your message was sent successfully! <br>You will here from us shortly</h1>
+                <button id="close-btn">CLOSE</button>
+              </div>
             </div>
           </div>
         </div>
@@ -89,7 +102,7 @@
               <h6>Copyright &#169; 2020 Makolet Pvt Ltd</h6>
           </div>   
           </div>
-        </footer>
+        </footer>        
     </div>
 </body>
 </html>

@@ -124,14 +124,15 @@ body {
     margin: 10px;
 }
 
-#contact-form {
+#contact-us {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
-#form {
+.form {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -139,7 +140,7 @@ body {
     font-size: large;
 }
 
-#form input, #description {
+.form input, #description {
     width: 350px;
     height: 50px;
     background-color: var(--white-bg-color);
@@ -148,12 +149,12 @@ body {
     color: rgb(0, 0, 0);    
 }
 
-#form input:focus, #description:focus {
+.form input:focus, #description:focus {
     outline: none;   
     box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.486), 0 2px 10px 0 rgba(255, 255, 255, 0.342);
 }
 
-#form button {
+.form button, button {
     margin: 10px;
     width: 100px;
     height: 50px;
@@ -166,11 +167,54 @@ body {
     outline: none;   
 }
 
-#form button:active {
+.form button:active {
     box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.486), 0 2px 10px 0 rgba(255, 255, 255, 0.342);
 }
 
-/* #form input:nth-child(4) {
+.response-container {
+    position: absolute;
+    width: 50vw;
+    height: 40vh;
+    background-color: rgba(167, 165, 165, 0.931);
+    color: black;
+    border-radius: 60px;
+    box-shadow: 10px 5px 20px 10px rgba(102, 95, 95, 0.787);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    justify-self: center;
+    margin: 0 auto;
+    animation-name: slide-up;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    display: none;
+}
+
+@keyframes slide-up {
+    0% {
+        opacity: 0;
+        bottom: 1200px
+    }
+    100% {
+        opacity: 1;
+        bottom: 0px;
+    }
+}
+
+.response-container button {
+    align-self: center;
+    margin: 20px;
+}
+
+.response-container button:active {
+    box-shadow: 5px 5px 5px 5px rgba(102, 95, 95, 0.787);
+    background-color: rgba(0, 0, 0, 0.911);
+    color: white;
+}
+
+/* .form input:nth-child(4) {
     margin: 10px;
     width: 350px;
     height: 100px;
@@ -190,13 +234,13 @@ body {
     padding-bottom: 12px;
 }
 
-#form input::placeholder {
+.form input::placeholder {
     /* padding: 10px; */
 }
 
-#form input:active~#form input::placeholder {}
+.form input:active~.form input::placeholder {}
 
-#form input[type=text],
+.form input,
 select {
     font-size: 18px;
     padding: 12px 20px;
@@ -299,7 +343,7 @@ select {
         height: 100vh;
     }
 
-    #form input {
+    .form input {
         width: 250px;
         height: 40px;
         border: none;
@@ -315,13 +359,13 @@ select {
         border-radius: 10px;
     }
 
-    #form input::placeholder {
+    .form input::placeholder {
         /* padding: 10px; */
     }
 
-    #form input:active~#form input::placeholder {}
+    .form input:active~.form input::placeholder {}
 
-    #form input[type=text],
+    .form input[type=text],
     select {
         padding: 12px 20px;
         margin: 8px 0;
@@ -356,6 +400,41 @@ select {
 
     .my-footer .container {
         height: 30vh;
+    }
+
+    .response-container {
+        position: absolute;
+        width: 80vw;
+        height: 30vh;
+        bottom: 120px;
+        border-radius: 20px;
+        box-shadow: 10px 5px 20px 10px rgba(102, 95, 95, 0.787);        
+    }
+    
+    @keyframes slide-up {
+        0% {
+            opacity: 0;
+            bottom: 1200px
+    }
+        100% {
+            opacity: 1;
+            bottom: 0px;
+        }
+}
+    .response-container h1 {
+        font-size: 1.3rem !important;
+    }
+
+    .response-container button {
+        width: 70px;
+        height: 35px;
+        font-size: 0.8rem;
+    }
+    
+    .response-container button:active {
+        box-shadow: 5px 5px 5px 5px rgba(102, 95, 95, 0.787);
+        background-color: rgba(0, 0, 0, 0.911);
+        color: white;
     }
 }
 
