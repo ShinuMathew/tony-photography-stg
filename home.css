@@ -446,7 +446,7 @@ section {
 .footer-social-icons h6 {
     color: var(--light-font-color);
     font-weight: 100;
-    letter-spacing: 0.4rem;
+    letter-spacing: 0.3rem;
 }
 
 ._14 {
@@ -828,7 +828,7 @@ section {
     }
 
     section {
-        height: calc(80vh);
+        height: calc(75vh)
     }
 
     .btn {
@@ -842,6 +842,11 @@ section {
 
     ._14 {
         font-size: 1rem;
+    }
+
+    .footer-social-icons h6 {
+        letter-spacing: 0.2rem;
+        font-size: 0.6rem;
     }
 }
 
