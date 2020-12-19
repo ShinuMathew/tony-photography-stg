@@ -90,9 +90,36 @@ body {
     outline: none;
 }
 
+
+/* .btn-highlight {
+    animation-name: tap;    
+    animation-duration: 2s;      
+    background-color: transparent;
+    color: wheat ; 
+} */
+
+@keyframes tap {
+    0% {   
+        background-color: var(--lighter-font-color);
+        color: black;     
+    } 
+    100% {                                  
+        background-color: transparent;
+        color: wheat ;            
+    }  
+    /* 100% { 
+        background-color: transparent;
+        color: wheat ; 
+    }        */
+}
+
 .buttons button:hover {
     background-color: var(--lighter-font-color);
     color: black;
+}
+
+.buttons button:active {
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.486), 0 2px 10px 0 rgba(255, 255, 255, 0.342);
 }
 
 .slide:first-child {
@@ -158,27 +185,12 @@ body {
         padding: 15px 15px;
         font-size: 2rem;
         border-radius: 20%;
-        outline: none;
+        outline: none;        
     }
 
     .buttons button:hover {
-        animation-name: tap;    
-        animation-duration: 0.3s;
-        animation-timing-function: linear;
-        background-color: var(--lighter-font-color);
         background-color: transparent;
         color: wheat ; 
-    }
-
-    @keyframes tap {
-        0% {
-            background-color: transparent;
-            color: wheat ;            
-        } 
-        100% {
-            background-color: var(--lighter-font-color);
-            color: black;
-        }
-        
+        /* -webkit-tap-highlight-color: var(--lighter-font-color); */
     }
 }

@@ -29,6 +29,7 @@ const prevSlide = () => {
 
 next.addEventListener('click', e => {
     nextSlide()
+    next.classList.add('btn-highlight')
     if(auto) {
         clearInterval(slideInterval)
         slideInterval = setInterval(nextSlide, intervalTime)
@@ -37,6 +38,7 @@ next.addEventListener('click', e => {
 
 prev.addEventListener('click', e => {
     prevSlide()
+    prev.classList.add('btn-highlight')
     if(auto) {
         clearInterval(slideInterval)
         slideInterval = setInterval(nextSlide, intervalTime)
