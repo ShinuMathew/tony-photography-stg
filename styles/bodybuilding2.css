@@ -190,7 +190,10 @@ body {
 
     .buttons button:hover {
         background-color: transparent;
-        color: wheat ; 
-        /* -webkit-tap-highlight-color: var(--lighter-font-color); */
+        color: wheat ;     
+    }
+
+    .buttons button:active {
+        box-shadow: 0 8px 20px 0 rgba(255, 255, 255, 0.486), 0 2px 20px 0 rgba(255, 255, 255, 0.342);
     }
 }
