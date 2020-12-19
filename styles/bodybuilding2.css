@@ -163,8 +163,8 @@ body {
     .buttons button:hover {
         animation-name: tap;    
         animation-duration: 0.2s;
-        background-color: transparent;
-        color: wheat ; 
+        background-color: var(--lighter-font-color);
+        color: black;
     }
 
     @keyframes tap {
