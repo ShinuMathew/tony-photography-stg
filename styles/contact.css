@@ -270,6 +270,10 @@ select {
     letter-spacing: .3rem;
 }
 
+.my-footer .container h3 br {
+    display: none;
+}
+
 .my-footer .container h3 span {
     margin: 2px;
 }
@@ -386,6 +390,7 @@ select {
         font-style: italic;
         font-size: 0.6rem;
         letter-spacing: 0px;
+        text-align: center;
     }
     
     .my-footer .container h6 {
@@ -436,6 +441,9 @@ select {
         box-shadow: 5px 5px 5px 5px rgba(102, 95, 95, 0.787);
         background-color: rgba(0, 0, 0, 0.911);
         color: white;
+    }
+    .my-footer .container h3 br {
+        display: block;
     }
 }
 

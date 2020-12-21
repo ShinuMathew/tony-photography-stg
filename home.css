@@ -20,7 +20,7 @@ body {
     --default-font: font-family: 'IM Fell French Canon SC', serif;
     /* --default-font : font-family: 'Poppins', sans-serif; */
     --default-bg-color: rgba(7, 10, 10, 0.363);
-    --darker-bg-color: rgba(7, 10, 10, 0.623);
+    --darker-bg-color: rgba(7, 10, 10, 0.835);
     --default-btn-select: rgba(7, 10, 10, 0.698);
     --default-selected-nav-color: rgb(146, 120, 120);
     --default-nav-color: #fff;
@@ -611,7 +611,7 @@ section {
     /* Header and navigations */
 
     header {
-        background-color: var(--default-bg-color);
+        background-color: var(--dark-bg-color);
     }
 
     .hamburger-menu-container {
