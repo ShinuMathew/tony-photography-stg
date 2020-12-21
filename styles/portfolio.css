@@ -84,7 +84,27 @@ body {
     bottom: 10rem;
     left: 0;    
     text-align: center;
+    border-radius: 0px 10px 10px 0px;
+    display: none;
+    animation-name: appear;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in;
     /* filter: blur(2px);     */
+}
+
+[class*='bodybuilding']:hover .description{
+    display: block;
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+        width: 0%;
+    }
+    100% {
+        opacity: 1;
+        width: 70%;
+    }
 }
 
 .portfolio-block .description h3 {
@@ -140,6 +160,8 @@ h3 {
     }
 
     .portfolio-block .description {
+        display: block;
+        animation: none;
         bottom: 0;
         left: 0; 
     }
