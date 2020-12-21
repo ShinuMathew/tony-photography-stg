@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-body {    
+body {
     background-image: url(./../sliders/contact-bg1-min.jpg);
 }
 
@@ -20,7 +20,7 @@ body {
     position: relative;
 }
 
-.about-section {    
+.about-section {
     height: 100vh;
     width: 100vw;
     display: flex;
@@ -38,13 +38,14 @@ body {
     animation-fill-mode: forwards;
 }
 
-@keyframes heading{
-    0%{
+@keyframes heading {
+    0% {
         left: -200px;
         opacity: 0;
     }
-    100%{
-        left: 0px;
+
+    100% {
+        left: 50px;
         opacity: 1;
     }
 }
@@ -53,61 +54,65 @@ body {
     height: 90%;
     max-width: 80%;
     margin: 0 auto;
-    background-color:transparent;
+    background-color: transparent;
     border-radius: 30px;
     color: var(--light-font-color);
     font-family: var(--default-font);
     display: flex;
     flex-direction: column;
-    justify-content: center; 
+    justify-content: center;
 }
 
 .about-text h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin-left: 2rem;
     margin-top: 2rem;
-    font-weight: 0.8rem;
+    font-weight: 0.5rem;
+    letter-spacing: 0.1rem;
     color: var(--darker-font-color);
 }
 
 .about-text h3 {
     margin: 1rem;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+    letter-spacing: 0.1rem;
+    font-weight: 0.1rem;
     color: var(--dark-font-color);
     font-style: italic;
 }
 
-.about-text h3 span{
+.about-text h3 span {
     color: var(--darker-font-color);
-    font-size: 1.8rem;
-    font-weight: 1.8rem;
+    font-size: 1.4rem;
+    font-weight: 0.7rem;
 }
 
-.about-text h3 br { 
+.about-text h3 br {
     display: none;
 }
 
 .about-text p {
-    font-size: 1.5rem;
+    font-size: 1rem;
     margin: 1rem;
     font-family: var(--default-font);
     font-style: italic;
 }
 
 .about-section .image {
-    height: 100%;
-    width: 100%;    
+    height: 80%;
+    width: 80%;
     animation: image;
     animation-duration: 3s;
     animation-fill-mode: forwards;
 }
 
-@keyframes image{
-    0%{
+@keyframes image {
+    0% {
         bottom: -200px;
         opacity: 0;
     }
-    100%{
+
+    100% {
         bottom: 0px;
         opacity: 1;
     }
@@ -116,8 +121,9 @@ body {
 .about-section .image img {
     max-width: 100%;
     height: 90%;
-    border-radius: 15px;    
+    border-radius: 15px;
 }
+
 /* Social media containers */
 
 .footer-social-icons {
@@ -141,6 +147,7 @@ body {
     0% {
         opacity: 0;
     }
+
     100% {
         opacity: 1;
     }
@@ -153,7 +160,7 @@ body {
     font-weight: 2em;
     font-style: italic;
     font-size: 1.5rem;
-    margin-right: 10px ;
+    margin-right: 10px;
 }
 
 .social-icon {
@@ -260,9 +267,13 @@ body {
     text-align: center;
 }
 
+#contact-info {
+    font-size: 1.2rem;
+}
+
 @media (max-width : 1200px) {
 
-    .about-section {    
+    .about-section {
         height: 100vh;
         width: 100vw;
         display: flex;
@@ -278,29 +289,30 @@ body {
 
     .about-text h1 {
         font-size: 2rem;
-        margin-left: 1rem;
+        margin-left: 2rem;
         margin-top: 1rem;
         font-weight: 0.6rem;
+
         color: var(--darker-font-color);
     }
-    
+
     .about-text h3 {
         margin: 1rem;
         font-size: 1.3rem;
         color: var(--dark-font-color);
         font-style: italic;
     }
-    
-    .about-text h3 span{
+
+    .about-text h3 span {
         color: var(--darker-font-color);
         font-size: 1.5rem;
         font-weight: 1.5rem;
     }
-    
-    .about-text h3 br { 
+
+    .about-text h3 br {
         display: none;
     }
-    
+
     .about-text p {
         font-size: 1.3rem;
         margin: 1rem;
@@ -308,15 +320,23 @@ body {
         font-style: italic;
     }
 
-    ._14 {    
+    ._14 {
         font-size: 1.3rem;
-        margin-right: 8px ;
+        margin-right: 8px;
     }
 
-    .about-section .image img {
-        max-width: 100%;
-        height: auto;
+    @keyframes heading {
+        0% {
+            left: -200px;
+            opacity: 0;
+        }
+
+        100% {
+            left: 0px;
+            opacity: 1;
+        }
     }
+
 }
 
 @media (max-width : 1000px) {
@@ -335,6 +355,7 @@ body {
     .about-section .image {
         height: 100%;
         max-width: 60%;
+        width: auto;
         margin: 0 auto;
         position: absolute;
     }
@@ -346,20 +367,20 @@ body {
         top: 70%;
         z-index: 20;
     }
-    
+
     .about-section .about-info .about-text {
         height: 90%;
         max-width: 80%;
-        margin: 0 auto;        
+        margin: 0 auto;
         border-radius: 30px;
         background-color: var(--light-bg-color);
         color: var(--light-font-color);
         font-family: var(--default-font);
         display: flex;
         flex-direction: column;
-        justify-content: flex-start; 
+        justify-content: flex-start;
     }
-    
+
     .about-text h1 {
         font-size: 3rem;
         margin-left: 2rem;
@@ -367,24 +388,24 @@ body {
         font-weight: 0.8rem;
         color: var(--darker-font-color);
     }
-    
+
     .about-text h3 {
         margin: 1rem;
         font-size: 1.5rem;
         color: var(--dark-font-color);
         font-style: italic;
     }
-    
-    .about-text h3 span{
+
+    .about-text h3 span {
         color: var(--darker-font-color);
         font-size: 1.8rem;
         font-weight: 1.8rem;
     }
-    
-    .about-text h3 br { 
+
+    .about-text h3 br {
         display: none;
     }
-    
+
     .about-text p {
         font-size: 1.5rem;
         margin: 1rem;
@@ -401,6 +422,7 @@ body {
         top: 60%;
         z-index: 20;
     }
+    
 }
 
 @media (max-width : 750px) {
@@ -419,24 +441,24 @@ body {
         font-weight: 0.7rem;
         color: var(--darker-font-color);
     }
-    
+
     .about-text h3 {
         margin: 1rem;
         font-size: 1.3rem;
         color: var(--dark-font-color);
         font-style: italic;
     }
-    
-    .about-text h3 span{
+
+    .about-text h3 span {
         color: var(--darker-font-color);
         font-size: 1.6rem;
         font-weight: 1.6rem;
     }
-    
-    .about-text h3 br { 
+
+    .about-text h3 br {
         display: none;
     }
-    
+
     .about-text p {
         font-size: 1.3rem;
         margin: 1rem;
@@ -444,9 +466,9 @@ body {
         font-style: italic;
     }
 
-    ._14 {    
+    ._14 {
         font-size: 1.3rem;
-        margin-right: 8px ;
+        margin-right: 8px;
     }
 }
 
@@ -471,9 +493,9 @@ body {
         font-weight: 0.7rem;
         color: var(--darker-font-color);
     }
-    
+
     .about-text h3 {
-        margin: 1rem;        
+        margin: 1rem;
         color: var(--dark-font-color);
         font-style: italic;
         font-size: 0.9rem;
@@ -484,17 +506,17 @@ body {
         font-size: 0.8rem;
         margin: 5px
     }
-    
-    .about-text h3 span{
+
+    .about-text h3 span {
         color: var(--darker-font-color);
         font-size: 1.3rem;
         font-weight: 1.3rem;
     }
-    
-    .about-text h3 br { 
+
+    .about-text h3 br {
         display: none;
     }
-    
+
     .about-text p {
         font-size: 1.1rem;
         margin: 1rem;
@@ -509,7 +531,7 @@ body {
         font-size: 0.8rem;
     }
 
-    ._14 {    
+    ._14 {
         font-size: 1.1rem;
     }
 
@@ -539,9 +561,9 @@ body {
         font-weight: 0.5rem;
         color: var(--darker-font-color);
     }
-    
+
     .about-text h3 {
-        margin: 1rem;        
+        margin: 1rem;
         color: var(--dark-font-color);
         font-style: italic;
     }
@@ -551,17 +573,17 @@ body {
         font-size: 0.7rem;
         margin: 4px
     }
-    
-    .about-text h3 span{
+
+    .about-text h3 span {
         color: var(--darker-font-color);
         font-size: 0.7rem;
         font-weight: 1rem;
     }
-    
-    .about-text h3 br { 
+
+    .about-text h3 br {
         display: block;
     }
-    
+
     .about-text p {
         font-size: 0.9rem;
         margin: 1rem;
@@ -573,9 +595,9 @@ body {
         flex-direction: column;
     }
 
-    ._14 {    
+    ._14 {
         font-size: 1rem;
-        margin-right: 5px ;
+        margin-right: 5px;
     }
 
     [class*='fa-'] {
@@ -590,25 +612,25 @@ body {
         font-size: 0.6rem;
         margin: 3px
     }
-    
+
     .about-text h3 {
         margin: 0.5rem;
         font-size: 0.5rem;
         color: var(--dark-font-color);
         font-style: italic;
     }
-    
-    .about-text h3 span{
+
+    .about-text h3 span {
         color: var(--darker-font-color);
         font-size: 0.7rem;
         font-weight: 1rem;
     }
-    
-    .about-text h3 br { 
+
+    .about-text h3 br {
         display: block;
     }
 
-    
+
     .about-text p {
         font-size: 0.6rem;
         margin: 1rem;
@@ -620,9 +642,9 @@ body {
         flex-direction: column;
     }
 
-    ._14 {    
+    ._14 {
         font-size: 0.7rem;
-        margin-right: 5px ;
+        margin-right: 5px;
     }
 
     [class*='fa-'] {

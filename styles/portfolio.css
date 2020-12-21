@@ -81,10 +81,16 @@ body {
     background-color: rgba(0, 0, 0, 0.609);
     border-radius: 3px;
     color: var(--dark-font-color);
-    bottom: 10px;
+    bottom: 10rem;
     left: 0;    
     text-align: center;
     /* filter: blur(2px);     */
+}
+
+.portfolio-block .description h3 {
+    position: absolute;
+    top: 25%;
+    left: 20%;
 }
 
 @keyframes blur-rev {

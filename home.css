@@ -94,9 +94,9 @@ header {
 
 .logo {
     color: var(--light-font-color);
-    font-size: 1.3rem;
-    font-weight: 5000;
-    letter-spacing: 2px;
+    font-size: 1.2rem;
+    font-weight: 1000;
+    letter-spacing: 0.15rem;
     text-transform: uppercase;
 }
 
@@ -194,7 +194,7 @@ header {
 
 section {
     position: relative;
-    height: calc(82vh);
+    height: calc(70vh);
     width: 100%;
     overflow: hidden;
 }
@@ -208,19 +208,27 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .overlay .text-content1 {
-    height: 40%;
+    /* height: 40%; */
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     position: relative;
     animation-name: content1;
     animation-duration: 3s;
     animation-fill-mode: forwards;
+}
+
+.text-content1 h1 {
+    margin: 30px;
+}
+
+.text-content1 h3 {
+    margin-bottom: 20px;
 }
 
 @keyframes content1 {
@@ -233,6 +241,10 @@ section {
         top: 0%;
         opacity: 1;
     }
+}
+
+.overlay h1, .overlay h3, .overlay h6{
+    opacity: 0.7;
 }
 
 .overlay .text-content2 {
@@ -258,7 +270,7 @@ section {
 }
 
 .overlay h1 {
-    font-size: 3rem;
+    font-size: 3.5rem;
     color: var(--light-font-color);
     font-weight: 10;
     letter-spacing: 5px;
@@ -281,6 +293,7 @@ section {
     letter-spacing: 5px;
     font-style: italic;
 }
+
 
 .overlay h3 br {
     display: none;
@@ -309,6 +322,7 @@ section {
     animation-duration: 3s;
     animation-delay: 2s;
     animation-fill-mode: forwards;
+    margin: 30px;
 }
 
 @keyframes button {
@@ -322,8 +336,8 @@ section {
 }
 
 .btn {
-    background-color: #fff;
-    color: chocolate;
+    background-color: rgba(255, 255, 255, 0.589);
+    color: rgb(65, 33, 10);
 }
 
 .btn:hover {
@@ -750,7 +764,7 @@ section {
     }
 
     .overlay h3 {
-        font-size: 0.8rem;
+        font-size: 1rem;
         text-align: center;
         letter-spacing: 3px;
     }
@@ -812,17 +826,34 @@ section {
     }
 
     .overlay h1 {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
+        flex-direction: column;
+    }
+/* 
+    .overlay h3 br {
+        display: block;
+    } */
+
+    .text-content2 h3 {
+        margin: 20px;
+    }
+
+    .overlay h1 span {
+        text-transform: uppercase;
+        margin: 10px;
+        padding-left: 0px;
+        letter-spacing: 0.8rem;
     }
 
     .overlay h3 {
         font-size: 0.8rem;
         text-align: center;
         letter-spacing: 1.5px;
-    }
+    }   
 
     .logo {
         font-size: 1rem;
+        letter-spacing: 0.11rem;
     }
 
     .logo span {
@@ -830,7 +861,7 @@ section {
     }
 
     section {
-        height: calc(75vh)
+        height: calc(70vh)
     }
 
     .btn {
@@ -869,7 +900,13 @@ section {
     }
 
     .overlay h1 {
-        font-size: 0.8rem;
+        font-size: 1.2rem;
+    }
+
+    .overlay h1 span {
+        text-transform: uppercase;
+        margin: 10px;
+        letter-spacing: 0.5rem;
     }
 
     .overlay h3 {
