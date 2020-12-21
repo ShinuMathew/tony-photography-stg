@@ -10,7 +10,7 @@ btnScrollToTop.addEventListener('click', function() {
         })
     },200);
 });
-window.addEventListener("wheel", displayScrollToTop)
+window.addEventListener("scroll", displayScrollToTop)
 function displayScrollToTop() {
     var triggerBottom = window.innerHeight / 2 * 6;
     const top = myFooter.getBoundingClientRect().top
