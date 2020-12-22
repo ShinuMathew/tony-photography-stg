@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./../fontawesome-free-5.15.1-web/css/brands.css" />
     <link rel="stylesheet" href="./../fontawesome-free-5.15.1-web/css/fontawesome.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script type="text/javascript"src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
     <script type="text/javascript">
@@ -22,7 +23,7 @@
     </script>
     <title>Contact Us</title>
 </head>
-<body>
+<body>    
     <div class="body-space">
         <header class="my-header">
             <div class="container">
@@ -65,46 +66,91 @@
               </div>
             </div>
         </header>
-        <div class="content">
-          <div id="write-to-us">            
-            <div id="contact-us">
-              <h1>Write to us</h1>
-              <form method="POST" id="contact-form" class="form">                        
-                <input type="text" id="name" name="user_name" placeholder="Full Name" required>        
-                <input type="text" id="address" name="address" placeholder="Address" required>        
-                <input type="text" id="phone" placeholder="PhoneNo"name="contact_number" required>                
-                <input type="email" name="user_email" id="email" placeholder="Email Id" required>                              
-                <!-- <input type="number" name="phone" id="phone" placeholder="Email Id">                               -->
-                <textarea name="message" id="description" placeholder="Description"
-                rows = "3"
-                cols = "80" required></textarea>
-                <button>Submit</button>
-              </form>
-
-              <div class="response-container" id="response">
-                <h1>Thanks You!<br>Your message was sent successfully! <br>You will here from us shortly</h1>
-                <button id="close-btn">CLOSE</button>
-              </div>
+        <section class="contact">                      
+            <div class="content">
+                <h2>Contact Us</h2>
+                <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    In laudantium nulla, sed obcaecati quasi similique quas perspiciatis, ea at, animi quo? 
+                    Laudantium, eligendi cupiditate eaque nisi eveniet asperiores deleniti nesciunt?
+                </p> -->
             </div>
-          </div>
-        </div>
-        <footer class="my-footer">
-          <div class="container">
-            <div class="footer-social-icons">
-              <h4 class="_14">Follow us on</h4>
-              <ul class="social-icons">
-                  <li><a href="" class="social-icon"> <i class="fa fa-facebook"></i></a></li>
-                  <li><a href="" class="social-icon"> <i class="fa fa-twitter"></i></a></li>
-                  <li><a href="" class="social-icon"> <i class="fa fa-instagram"></i></a></li>
-                  <li><a href="" class="social-icon"> <i class="fa fa-youtube"></i></a></li>
-                  <li><a href="" class="social-icon"> <i class="fa fa-linkedin"></i></a></li>               
-              </ul>            
-              <h3><i class="fa fa-phone icons"></i> : +001-123-234-5678 <span>|</span> <i class="fa fa-envelope"></i> : tonyallen@gmail.com</h3>
-              <h3><i class="fa fa-home icons"></i> : Capitaine Jean Luc Picard | 52 Rue des fleurs |<br> 33500 Libourne, France </h3>
-              <h6>Copyright &#169; 2020 Makolet Pvt Ltd</h6>
-          </div>   
-          </div>
-        </footer>        
+            <div class="container">
+                <div class="contactInfo">
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        </div>
+                        <div class="text">
+                            <h3>Address</h3>
+                            <p>Capitaine Jean Luc Picard <br> 52 Rue des fleurs <br> 33500 Libourne, France </p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fa fa-phone" aria-hidden="true"></i>
+                        </div>
+                        <div class="text">
+                            <h3>Phone</h3>
+                            <p>+001-123-234-5678</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                        </div>
+                        <div class="text">
+                            <h3>Email</h3>
+                            <p>tonysfitness@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <ul class="social-icons">
+                            <li><a href="" class="social-icon"> <i class="fa fa-facebook"></i></a></li>
+                            <li><a href="" class="social-icon"> <i class="fa fa-twitter"></i></a></li>
+                            <li><a href="" class="social-icon"> <i class="fa fa-instagram"></i></a></li>
+                            <li><a href="" class="social-icon"> <i class="fa fa-youtube"></i></a></li>
+                            <li><a href="" class="social-icon"> <i class="fa fa-linkedin"></i></a></li>               
+                        </ul> 
+                    </div>
+                </div>
+                <div class="contactForm">
+                    <form method="POST" id="contact-form" class="form">
+                        <h2>Send Message</h2>
+                        <div class="inputBox">
+                            <input type="text" id="name" name="user_name" required>
+                            <span>Full Name</span>
+                        </div>                   
+                        <div class="inputBox">
+                            <input type="number" id="phone" name="contact_number" required>
+                            <span>Phone Number</span>
+                        </div>                   
+                        <div class="inputBox">
+                            <input type="email" name="user_email" id="email" required>
+                            <span>Email</span>
+                        </div>                 
+                        <div class="inputBox">
+                            <textarea name="message" id="description" required></textarea>
+                            <span>Type you message...</span>
+                        </div>                 
+                        <div class="inputBox">
+                            <button>Submit</button>
+                        </div>                                                                
+                      </form>
+                </div>
+            </div>
+
+
+            <div class="modal" id="modal">
+                <div class="message">
+                    <h2>Thank you for writing to us</h2>
+                    <h2>Your message has been sent successfully</h2>
+                    <h2>We will reply to you shortly</h2>
+                </div>
+                <div class="btn-close">
+                    <button id="close-btn">Close</button>
+                </div>
+            </div> 
+        </section> 
     </div>
 </body>
 </html>

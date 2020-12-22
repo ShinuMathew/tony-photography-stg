@@ -33,10 +33,10 @@ window.onload = function () {
         emailjs.sendForm('shinu123', 'template_my21kmf', this)
             .then(function () {
                 console.log('SUCCESS!');
-                document.getElementById('response').style.display = "block"
+                document.getElementById('modal').style.display = "block"
                 console.log(document.getElementById('close-btn'))
                 document.getElementById('close-btn').addEventListener('click', (e) => {
-                    document.getElementById('response').style.display = "none"
+                    document.getElementById('modal').style.display = "none"
                     window.location.reload()
                 })                
             }, function (error) {
