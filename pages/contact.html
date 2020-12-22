@@ -70,13 +70,14 @@
             <div id="contact-us">
               <h1>Write to us</h1>
               <form method="POST" id="contact-form" class="form">                        
-                <input type="text" id="name" name="user_name" placeholder="Full Name">        
-                <input type="text" id="phone" placeholder="PhoneNo"name="contact_number">                
-                <input type="email" name="user_email" id="email" placeholder="Email Id">                              
+                <input type="text" id="name" name="user_name" placeholder="Full Name" required>        
+                <input type="text" id="address" name="address" placeholder="Address" required>        
+                <input type="text" id="phone" placeholder="PhoneNo"name="contact_number" required>                
+                <input type="email" name="user_email" id="email" placeholder="Email Id" required>                              
                 <!-- <input type="number" name="phone" id="phone" placeholder="Email Id">                               -->
                 <textarea name="message" id="description" placeholder="Description"
                 rows = "3"
-                cols = "80"></textarea>
+                cols = "80" required></textarea>
                 <button>Submit</button>
               </form>
 
