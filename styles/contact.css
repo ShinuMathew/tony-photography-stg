@@ -10,7 +10,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    overflow: hidden;
+    overflow: auto;
 }
 
 .body-space {
@@ -27,7 +27,7 @@ body {
     --default-font: font-family: 'IM Fell French Canon SC', serif;
     background-color: var(--dark-bg-color);
     position: relative;
-    overflow: hidden;
+    overflow: auto;
     height: 100vh;
 }
 
@@ -372,7 +372,7 @@ body {
 @media (max-width: 900px) {
 
     .body-space {
-        overflow: scroll;
+        overflow: auto;
     }
 
     .modal {
@@ -397,7 +397,7 @@ body {
     }
 
     .contact {
-        overflow: scroll;
+        overflow: auto;
     }
 
     .contact .container {
