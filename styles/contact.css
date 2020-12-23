@@ -88,6 +88,21 @@ body {
     text-align: center;
     color: var(--light-font-color);
     margin: 20px 0px 20px 0px;
+    opacity: 0;
+    animation-name: appear;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;        
+    } 
+    to {
+        opacity: 1;        
+    }
 }
 
 .contact .content h2 {
@@ -120,6 +135,24 @@ body {
     width: 50%;
     display: flex;
     flex-direction: column;
+}
+
+.contactInfo {
+    animation-name: swipe-in-left;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes swipe-in-left {
+    from {
+        opacity: 0;
+        transform: translateX(-600px);
+    } 
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
 }
 
 .contact .container .contactInfo .box {
@@ -183,10 +216,26 @@ body {
 }
 
 .contactForm {
-    width: 40%;
+    width: 35%;
     padding: 40px;
+    height: 100%;
     background: var(--light-white);
     border-radius: 20px;
+    animation-name: swipe-in-right;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes swipe-in-right {
+    from {
+        opacity: 0;
+        transform: translateX(600px);
+    } 
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
 }
 
 .contactForm h2 {
